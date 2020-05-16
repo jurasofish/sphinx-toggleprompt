@@ -13,7 +13,7 @@ def scb_static_path(app):
 
 def add_to_context(app, config):
     # Update the global context
-    pass
+    config.html_context.update({'toggleprompt_offset_right': config.toggleprompt_offset_right})
 
 
 def setup(app):
@@ -22,7 +22,7 @@ def setup(app):
     app.connect('builder-inited', scb_static_path)
 
     # configuration for this tool
-    pass
+    app.add_config_value("toggleprompt_offset_right", "0", "html")
 
     # Add configuration value to the template
     app.connect("config-inited", add_to_context)
