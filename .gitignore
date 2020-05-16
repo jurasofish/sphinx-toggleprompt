@@ -110,3 +110,4 @@ doc/_build/
 .vscode
 
 .idea/
+doc*/_build/
