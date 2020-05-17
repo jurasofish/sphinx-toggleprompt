@@ -1,0 +1,30 @@
+name: test_build_docs
+
+on: [push, pull_request]
+
+jobs:
+
+  test_build_docs:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.6, 3.7, 3.8]
+        docs-dir: [doc, doc_copybutton]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install .
+        pip install -r ${{ docs-dir }}/requirements.txt
+
+    - name: Build ${{ docs-dir }}
+      run: |
+        cd ${{ docs-dir }}
+        make html
