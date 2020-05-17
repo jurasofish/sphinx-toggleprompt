@@ -22,7 +22,7 @@ def setup(app):
     app.connect('builder-inited', scb_static_path)
 
     # configuration for this tool
-    app.add_config_value("toggleprompt_offset_right", "0", "html")
+    app.add_config_value("toggleprompt_offset_right", 0, "html")
 
     # Add configuration value to the template
     app.connect("config-inited", add_to_context)
