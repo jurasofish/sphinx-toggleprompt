@@ -1,10 +1,10 @@
-name: test_build_docs
+name: test
 
 on: [push, pull_request]
 
 jobs:
 
-  test_build_docs:
+  test:
 
     runs-on: ubuntu-latest
     strategy:
