@@ -1,7 +1,7 @@
 # sphinx-toggleprompt
 
   [![PyPI](https://img.shields.io/pypi/v/sphinx-toggleprompt.svg)](https://pypi.org/project/sphinx-toggleprompt/) 
-| [![Documentation](https://readthedocs.org/projects/sphinx-toggleprompt/badge/?version=latest)](https://sphinx-toggleprompt.readthedocs.io/en/latest/?badge=latest)
+| [![Documentation](https://readthedocs.org/projects/sphinx-toggleprompt/badge/?version=stable)](https://sphinx-toggleprompt.readthedocs.io/en/stable/?badge=stable)
 | [![Build](https://github.com/jurasofish/sphinx-toggleprompt/workflows/build/badge.svg?branch=master)](https://github.com/jurasofish/sphinx-toggleprompt/actions)
 
 

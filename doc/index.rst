@@ -5,8 +5,8 @@ Sphinx-toggleprompt
 .. image:: https://img.shields.io/pypi/v/sphinx-toggleprompt.svg
     :target: https://pypi.org/project/sphinx-toggleprompt/
 
-.. image:: https://readthedocs.org/projects/sphinx-toggleprompt/badge/?version=latest
-    :target: https://sphinx-toggleprompt.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/sphinx-toggleprompt/badge/?version=stable
+    :target: https://sphinx-toggleprompt.readthedocs.io/en/stable/?badge=stable
     :alt: Documentation Status
 
 .. image:: https://github.com/jurasofish/sphinx-toggleprompt/workflows/build/badge.svg?branch=master
