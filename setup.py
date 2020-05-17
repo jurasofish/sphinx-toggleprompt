@@ -25,7 +25,7 @@ setup(
     url="https://github.com/jurasofish/sphinx-toggleprompt",
     license='MIT License',
     packages=find_packages(),
-    package_data={'sphinx_toggleprompt': ['_static/toggleprompt.js']},
+    package_data={'sphinx_toggleprompt': ['_static/toggleprompt.js_t']},
     classifiers=["License :: OSI Approved :: MIT License"],
     install_requires=[
         "sphinx>=1.8"
