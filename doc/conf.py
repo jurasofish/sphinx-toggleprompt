@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'sphinx-toggleprompt'
+project = 'Sphinx Toggle Prompt'
 copyright = '2020, Michael Jurasovic'
 author = 'Michael Jurasovic'
 

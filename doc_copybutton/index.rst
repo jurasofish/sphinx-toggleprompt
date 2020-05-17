@@ -4,14 +4,6 @@ Sphinx-toggleprompt
 
 
 
-.. code-block:: bash
-
-    # this is highlighted as bash
-    >>> print(1)
-    I'm not really python
-
-blah blah blah
-
 .. code-block:: python
 
    >>> a = 2
@@ -22,3 +14,9 @@ blah blah blah
    >>> print(b)
    wow
 
+It only adds itself to Python code.
+
+.. code-block:: text
+
+    This is plain text,
+    so it doesn't get the toggle button.
