@@ -24,7 +24,7 @@ Sphinx-toggleprompt
 
 
 ``Sphinx-toggleprompt`` adds a button to Python code blocks to
-toggle ">>>" prompts and remove output lines. It's copied
+toggle ``>>>`` prompts and remove output lines. It's copied
 from the official Python docs theme.
 
 .. code-block:: python
