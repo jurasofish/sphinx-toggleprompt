@@ -33,6 +33,7 @@ extensions = [
 
 ## Usage with ``sphinx-copybutton``
 
-``sphinx-toggleprompt`` works well with ``sphinx-copybutton`` - see the docs.
+``sphinx-toggleprompt`` works well with ``sphinx-copybutton`` - see 
+[the documentation](https://sphinx-toggleprompt.readthedocs.io/en/master/).
 
-![](doc/_static/with_copybutton.gif)
+![](doc/_static/with_copybutton.png)
