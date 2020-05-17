@@ -13,11 +13,14 @@ jobs:
         docs-dir: [doc, doc_copybutton]
 
     steps:
+
     - uses: actions/checkout@v2
+
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
         python-version: ${{ matrix.python-version }}
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -28,3 +31,18 @@ jobs:
       run: |
         cd ${{ matrix.docs-dir }}
         make html
+
+    - name: Copy files
+      run: cp -r ./${{ matrix.docs-dir }}/_build/html ./html_docs
+
+    - name: Install zip
+      run: sudo apt-get install zip
+
+    - name: Zip files
+      run: zip -9 -r ./docs.zip ./html_docs
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: docs-${{ matrix.docs-dir }}-py${{ matrix.python-version }}.zip
+        path: ./docs.zip
