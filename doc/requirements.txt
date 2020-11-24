@@ -2,3 +2,6 @@ sphinx
 
 # Install ourselves
 .
+
+# So that we can get IPython highlighting
+ipython

@@ -29,7 +29,13 @@ author = 'Michael Jurasovic'
 # ones.
 extensions = [
     'sphinx_toggleprompt',
+
+    # sphinx_toggleprompt can work with sphinx_copybutton - see the docs.
     # 'sphinx_copybutton',
+
+    # Optional, for IPython highlighting
+    'IPython.sphinxext.ipython_directive',
+    'IPython.sphinxext.ipython_console_highlighting',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
