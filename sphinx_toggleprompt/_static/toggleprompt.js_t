@@ -10,6 +10,7 @@ $(document).ready(function() {
                 '.highlight-python3 .highlight,' +
                 '.highlight-pycon .highlight,' +
                 '.highlight-pycon3 .highlight,' +
+                '.highlight-ipython .highlight,' +
                 '.highlight-default .highlight');
     var pre = div.find('pre');
 
