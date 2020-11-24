@@ -37,6 +37,7 @@ from the official Python docs theme.
     >>> print(b)
     wow
 
+|
 
 .. ipython:: python
 
@@ -52,6 +53,8 @@ It only adds itself to Python code which contains prompts.
 
     This is formatted as plain text,
     so it doesn't get the toggle button.
+
+|
 
 .. code-block:: python
 
