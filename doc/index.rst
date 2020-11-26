@@ -49,6 +49,16 @@ from the official Python docs theme.
     cloud_vars
 
 
+|
+
+.. ipython:: python
+
+    # It works with IPython too
+    cloud_vars = ['total_clouds', 'low_clouds',
+                  'mid_clouds', 'high_clouds']
+    print(sorted(cloud_vars))
+
+
 It only adds itself to Python code which contains prompts.
 
 .. code-block:: text
