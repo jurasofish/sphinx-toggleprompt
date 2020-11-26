@@ -33,9 +33,10 @@ from the official Python docs theme.
     >>> print(a)
     2
     
-    >>> b = 'wow'
+    >>> b = ['wow',
+    ...      'eee']
     >>> print(b)
-    wow
+    ['wow', 'eee']
 
 |
 
@@ -45,6 +46,7 @@ from the official Python docs theme.
     cloud_vars = ['total_clouds', 'low_clouds',
                   'mid_clouds', 'high_clouds']
     print(sorted(cloud_vars))
+    cloud_vars
 
 
 It only adds itself to Python code which contains prompts.
