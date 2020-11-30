@@ -51,20 +51,29 @@ $(document).ready(function() {
     $('.copybutton').click(function(e){
         e.preventDefault();
         var button = $(this);
+
+        var hideComments = {{ toggleprompt_hide_comments | lower }};
+        console.log(hideComments);
+
+        // `.go` for comments
+        // `.gp` for ">>>", "...", "In [x]:"
+        // `.gt` for tracebacks
+        // `.gh` for "Out[x]:"
+        var classes = '.gp, .gh, .gt';
+        if (hideComments) {
+            classes = classes + ', .go'
+        }
+
         if (button.data('hidden') === 'false') {
             // hide the code output
-            // `.go` for comments
-            // `.gp` for ">>>", "...", "In [x]:"
-            // `.gt` for tracebacks
-            // `.gh` for "Out[x]:"
-            button.parent().find('.go, .gp, .gh, .gt').hide();
+            button.parent().find(classes).hide();
             button.next('pre').find('.gt').nextUntil('.gp, .gh, .go').css('visibility', 'hidden');
             button.css('text-decoration', 'line-through');
             button.attr('title', show_text);
             button.data('hidden', 'true');
         } else {
             // show the code output
-            button.parent().find('.go, .gp, .gh, .gt').show();
+            button.parent().find(classes).show();
             button.next('pre').find('.gt').nextUntil('.gp, .gh, .go').css('visibility', 'visible');
             button.css('text-decoration', 'none');
             button.attr('title', hide_text);

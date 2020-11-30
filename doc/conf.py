@@ -63,3 +63,4 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
 
 # toggleprompt_offset_right = 25
+toggleprompt_hide_comments = False  # True by default

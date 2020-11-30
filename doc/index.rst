@@ -29,7 +29,8 @@ from the official Python docs theme.
 
 .. code-block:: python
 
-    >>> a = 2
+    >>> a = 2  # blah blah
+    >>> # This is a comment
     >>> print(a)
     2
     
@@ -57,6 +58,11 @@ from the official Python docs theme.
     cloud_vars = ['total_clouds', 'low_clouds',
                   'mid_clouds', 'high_clouds']
     print(sorted(cloud_vars))
+    """
+    This is
+    multi line comment
+    """
+
 
 
 It only adds itself to Python code which contains prompts.
