@@ -55,7 +55,7 @@ $(document).ready(function() {
         var hideComments = {{ toggleprompt_hide_comments | lower }};
         console.log(hideComments);
 
-        // `.go` for comments
+        // `.go` for comments and normal outputs.
         // `.gp` for ">>>", "...", "In [x]:"
         // `.gt` for tracebacks
         // `.gh` for "Out[x]:"
