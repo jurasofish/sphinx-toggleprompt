@@ -143,7 +143,7 @@ There's an example of this in the doc_copybutton folder.
 Changelog
 ================================
 
-V0.1.0 - unreleased
+V0.1.1 - 07-may-2022
 -----------------------
 
 - Added tests for python 3.6 through 3.8
