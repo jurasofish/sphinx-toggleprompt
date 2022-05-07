@@ -6,12 +6,17 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: "ubuntu-20.04"
     strategy:
+      fail-fast: false
       matrix:
-        python-version: [3.6, 3.7, 3.8]
+        python-version: ["3.6", "3.7", "3.8", "3.9", "3.10"]
         docs-dir: [doc, doc_copybutton]
-        sphinx-ver: [1.8.5, 2.4.4, 3.0.3]
+        sphinx-ver: ["1.8.6", "2.4.5", "3.5.4", "4.5.0"]
+        exclude:
+          # py 3.10 + sphinx 3.5.4 has issues with typing
+          - python-version: "3.10"
+            sphinx-ver: "3.5.4"
 
     steps:
 
@@ -22,14 +27,10 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    - name: Upgrade pip
-      run: python -m pip install --upgrade pip
-
-    - name: Install sphinx ${{ matrix.sphinx-ver }}
-      run: python -m pip install sphinx==${{ matrix.sphinx-ver }}
-
     - name: Install dependencies
       run: |
+        python -m pip install --upgrade pip
+        python -m pip install sphinx==${{ matrix.sphinx-ver }}
         pip install .
         pip install -r ${{ matrix.docs-dir }}/requirements.txt
 
@@ -38,17 +39,8 @@ jobs:
         cd ${{ matrix.docs-dir }}
         make html
 
-    - name: Copy files
-      run: cp -r ./${{ matrix.docs-dir }}/_build/html ./html_docs
-
-    - name: Install zip
-      run: sudo apt-get install zip
-
-    - name: Zip files
-      run: zip -9 -r ./docs.zip ./html_docs
-
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
-        name: docs-${{ matrix.docs-dir }}-py${{ matrix.python-version }}-sph${{ matrix.sphinx-ver }}.zip
-        path: ./docs.zip
+        name: docs-${{ matrix.docs-dir }}-py${{ matrix.python-version }}-sph${{ matrix.sphinx-ver }}
+        path: ./${{ matrix.docs-dir }}/_build/html

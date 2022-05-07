@@ -116,7 +116,7 @@ Simply add ``toggleprompt_offset_right`` to your sphinx ``conf.py``:
 
     # In your sphinx conf.py
     # Defaults to 0 if not provided.
-    toggleprompt_offset_right = 25
+    toggleprompt_offset_right = 35
 
 
 Themes
@@ -132,9 +132,38 @@ Using with sphinx-copybutton
 ``sphinx-toggleprompt`` works great with `sphinx-copybutton
 <https://github.com/executablebooks/sphinx-copybutton>`_ - just simply
 add both of them to the extensions list in ``conf.py``.
-Setting ``toggleprompt_offset_right`` to a value around 25 stops them
+Setting ``toggleprompt_offset_right`` to a value around 35 stops them
 from overlapping (will probably vary).
 There's an example of this in the doc_copybutton folder.
 
 .. image:: _static/with_copybutton.png
    :width: 500px
+
+
+Changelog
+================================
+
+Vx.x.x - unreleased
+-----------------------
+
+- Added tests for python 3.6 through 3.8
+- Added tests for sphinx 4
+- Restricted jinja2 dependency version to fix breaking changes introduced in version 3.1
+
+
+V0.0.5 - 27-Nov-2020
+-----------------------
+
+- Add IPython highlighting support
+
+
+V0.0.3 - 25-jul-2020
+-----------------------
+
+- Make the ">>>" text non-selectable
+
+
+V0.0.2 - 17-may-2020
+-----------------------
+
+- Initial release

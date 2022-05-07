@@ -1,6 +1,4 @@
 sphinx
+sphinx-toggleprompt
 sphinx_rtd_theme
 sphinx-copybutton
-
-# Install ourselves
-.
