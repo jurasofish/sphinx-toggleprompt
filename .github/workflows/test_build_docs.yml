@@ -43,17 +43,8 @@ jobs:
         cd ${{ matrix.docs-dir }}
         make html
 
-    - name: Copy files
-      run: cp -r ./${{ matrix.docs-dir }}/_build/html ./html_docs
-
-    - name: Install zip
-      run: sudo apt-get install zip
-
-    - name: Zip files
-      run: zip -9 -r ./docs.zip ./html_docs
-
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: docs-${{ matrix.docs-dir }}-py${{ matrix.python-version }}-sph${{ matrix.sphinx-ver }}.zip
-        path: ./docs.zip
+        path: ./${{ matrix.docs-dir }}/_build/html
