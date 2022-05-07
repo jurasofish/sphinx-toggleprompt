@@ -9,7 +9,7 @@
 toggle ``>>>`` prompts and remove output lines. It's copied
 from the official Python docs theme.
 
-See [the documentation](https://sphinx-toggleprompt.readthedocs.io/en/master/).
+See [the documentation](https://sphinx-toggleprompt.readthedocs.io/en/stable/).
 
 ![](doc/_static/example.gif)
 
@@ -34,6 +34,6 @@ extensions = [
 ## Usage with ``sphinx-copybutton``
 
 ``sphinx-toggleprompt`` works well with ``sphinx-copybutton`` - see 
-[the documentation](https://sphinx-toggleprompt.readthedocs.io/en/master/).
+[the documentation](https://sphinx-toggleprompt.readthedocs.io/en/stable/).
 
 ![](doc/_static/with_copybutton.png)
