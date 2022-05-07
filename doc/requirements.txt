@@ -1,7 +1,4 @@
 sphinx
-
-# Install ourselves
-.
-
-# So that we can get IPython highlighting
+sphinx-toggleprompt
+# install ipython so that we can get IPython highlighting
 ipython
