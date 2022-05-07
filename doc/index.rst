@@ -106,6 +106,10 @@ and then build your docs - that's it.
 Configuration
 ================
 
+
+Offset
+---------
+
 You can control the offset of the toggleprompt button from the right-hand
 side of the code cell in pixels with the ``toggleprompt_offset_right``
 config value.
@@ -117,6 +121,13 @@ Simply add ``toggleprompt_offset_right`` to your sphinx ``conf.py``:
     # In your sphinx conf.py
     # Defaults to 0 if not provided.
     toggleprompt_offset_right = 35
+
+
+Default Hidden/Shown
+----------------------
+
+The ``toggleprompt_default_hidden`` config value can be set to
+`"true"` (a string), in which case prompts will be hidden by default.
 
 
 Themes

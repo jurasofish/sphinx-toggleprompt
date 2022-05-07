@@ -71,4 +71,7 @@ $(document).ready(function() {
             button.data('hidden', 'false');
         }
     });
+    if ('{{ toggleprompt_default_hidden }}' === 'true') {
+        $('.copybutton').click();  // click once to hide
+    }
 });
