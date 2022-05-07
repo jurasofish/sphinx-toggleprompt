@@ -143,6 +143,14 @@ There's an example of this in the doc_copybutton folder.
 Changelog
 ================================
 
+Vx.x.x - unreleased
+-----------------------
+
+- Added tests for python 3.6 through 3.8
+- Added tests for sphinx 4
+- Restricted jinja2 dependency version to fix breaking changes introduced in version 3.1
+
+
 V0.0.5 - 27-Nov-2020
 -----------------------
 
