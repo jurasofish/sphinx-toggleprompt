@@ -46,5 +46,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
-        name: docs-${{ matrix.docs-dir }}-py${{ matrix.python-version }}-sph${{ matrix.sphinx-ver }}.zip
+        name: docs-${{ matrix.docs-dir }}-py${{ matrix.python-version }}-sph${{ matrix.sphinx-ver }}
         path: ./${{ matrix.docs-dir }}/_build/html
