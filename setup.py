@@ -28,6 +28,7 @@ setup(
     package_data={'sphinx_toggleprompt': ['_static/toggleprompt.js_t']},
     classifiers=["License :: OSI Approved :: MIT License"],
     install_requires=[
-        "sphinx>=1.8"
+        "sphinx>=1.8",
+        "jinja2<3.1",  # https://github.com/sphinx-doc/sphinx/issues/10291
     ]
 )
