@@ -138,3 +138,24 @@ There's an example of this in the doc_copybutton folder.
 
 .. image:: _static/with_copybutton.png
    :width: 500px
+
+
+Changelog
+================================
+
+V0.0.5 - 27-Nov-2020
+-----------------------
+
+- Add IPython highlighting support
+
+
+V0.0.3 - 25-jul-2020
+-----------------------
+
+- Make the ">>>" text non-selectable
+
+
+V0.0.2 - 17-may-2020
+-----------------------
+
+- Initial release
