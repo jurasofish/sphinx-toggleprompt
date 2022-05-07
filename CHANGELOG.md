@@ -1,3 +1,3 @@
 # sphinx-toggleprompt changelog
 
-See [doc/index.rst](doc/changelog.rst)
+See [doc/index.rst](doc/index.rst)
