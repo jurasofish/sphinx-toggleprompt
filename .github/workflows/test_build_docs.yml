@@ -8,6 +8,7 @@ jobs:
 
     runs-on: "ubuntu-18.04"
     strategy:
+      fail-fast: false
       matrix:
         python-version: ["3.6", "3.7", "3.8"]
         docs-dir: [doc, doc_copybutton]
