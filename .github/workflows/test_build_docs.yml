@@ -12,7 +12,7 @@ jobs:
       matrix:
         python-version: ["3.6", "3.7", "3.8"]
         docs-dir: [doc, doc_copybutton]
-        sphinx-ver: ["1.8.5", "2.4.4", "3.0.3"]
+        sphinx-ver: ["1.8.6", "2.4.5", "3.5.4", "4.5.0"]
 
     steps:
 
