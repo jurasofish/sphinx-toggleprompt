@@ -1,5 +1,4 @@
 sphinx
-sphinx-copybutton
 
 # Install ourselves
 .
