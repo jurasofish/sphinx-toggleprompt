@@ -154,7 +154,7 @@ There's an example of this in the doc_copybutton folder.
 Changelog
 ================================
 
-V0.2.0 - unreleased
+V0.2.0 - 14-may-2022
 -----------------------
 
 - Added ``toggleprompt_default_hidden`` config value to allow setting initial hidden/shown state.
