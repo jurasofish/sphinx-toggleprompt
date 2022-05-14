@@ -127,7 +127,7 @@ Default Hidden/Shown
 ----------------------
 
 The ``toggleprompt_default_hidden`` config value can be set to
-`"true"` (a string), in which case prompts will be hidden by default.
+``"true"`` (a string), in which case prompts will be hidden by default.
 
 
 Themes
