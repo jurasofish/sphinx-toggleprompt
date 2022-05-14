@@ -14,6 +14,7 @@ def scb_static_path(app):
 def add_to_context(app, config):
     # Update the global context
     config.html_context.update({'toggleprompt_offset_right': config.toggleprompt_offset_right})
+    config.html_context.update({'toggleprompt_default_hidden': config.toggleprompt_default_hidden})
 
 
 def setup(app):
@@ -23,6 +24,7 @@ def setup(app):
 
     # configuration for this tool
     app.add_config_value("toggleprompt_offset_right", 0, "html")
+    app.add_config_value("toggleprompt_default_hidden", "false", "html")
 
     # Add configuration value to the template
     app.connect("config-inited", add_to_context)
