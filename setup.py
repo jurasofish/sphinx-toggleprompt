@@ -29,6 +29,6 @@ setup(
     classifiers=["License :: OSI Approved :: MIT License"],
     install_requires=[
         "jinja2<3.1",  # https://github.com/sphinx-doc/sphinx/issues/10291
-        "sphinx>=1.8,<6",
+        "sphinx>=4.5.0,<6",
     ]
 )
