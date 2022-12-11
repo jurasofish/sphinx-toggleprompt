@@ -154,6 +154,12 @@ There's an example of this in the doc_copybutton folder.
 Changelog
 ================================
 
+V0.3.1 - 11-dec-2022
+-----------------------
+
+- Fixed issue with pypi publishing
+
+
 V0.3.0 - 11-dec-2022
 -----------------------
 
