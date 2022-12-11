@@ -154,6 +154,14 @@ There's an example of this in the doc_copybutton folder.
 Changelog
 ================================
 
+V0.3.0 - 11-dec-2022
+-----------------------
+
+- Dropped support for sphinx < 4.5.0. This is due to https://github.com/sphinx-doc/sphinx/issues/10291
+- Added tests for sphinx 5
+- Modified sphinx dependency to be less than v6
+
+
 V0.2.0 - 14-may-2022
 -----------------------
 
