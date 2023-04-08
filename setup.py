@@ -28,6 +28,6 @@ setup(
     package_data={'sphinx_toggleprompt': ['_static/toggleprompt.js_t']},
     classifiers=["License :: OSI Approved :: MIT License"],
     install_requires=[
-        "sphinx>=4.5.0,<6",
+        "sphinx>=4.5.0,<7",
     ]
 )
