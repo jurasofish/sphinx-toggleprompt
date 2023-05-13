@@ -1,3 +1,6 @@
+// Copyright PSF. Licensed under the PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2.
+// File originates from the Python docs theme python_docs_theme/static/copybutton.js
+
 // ``function*`` denotes a generator in JavaScript, see
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
 function* getHideableCopyButtonElements(rootElement) {
