@@ -44,6 +44,17 @@ const loadCopyButton = () => {
     button.innerText = ">>>"
     button.title = hide_text
     button.dataset.hidden = "false"
+    button.style.setProperty('cursor', 'pointer')
+    button.style.setProperty('position', 'absolute')
+    button.style.setProperty('top', '0')
+    button.style.setProperty('right', '{{ toggleprompt_offset_right }}px')
+    button.style.setProperty('text-size', '75%')
+    button.style.setProperty('font-family', 'monospace')
+    button.style.setProperty('padding-left', '0.2em')
+    button.style.setProperty('padding-right', '0.2em')
+    button.style.setProperty('border-radius', '0 3px 0 0')
+    button.style.setProperty('user-select', 'none')
+
     const buttonClick = event => {
         // define the behavior of the button when it's clicked
         event.preventDefault()
@@ -80,6 +91,12 @@ const loadCopyButton = () => {
 
         // if we find a console prompt (.gp), prepend the (deeply cloned) button
         const clonedButton = button.cloneNode(true)
+
+        clonedButton.style.setProperty('border-color', el.style.BorderTopColor),
+        clonedButton.style.setProperty('border-style', el.style.BorderTopStyle),
+        clonedButton.style.setProperty('border-width', el.style.BorderTopWidth),
+        clonedButton.style.setProperty('color', el.style.BorderTopColor),
+
         // the onclick attribute is not cloned, set it on the new element
         clonedButton.onclick = buttonClick
         if (el.querySelector(".gp") !== null) {
