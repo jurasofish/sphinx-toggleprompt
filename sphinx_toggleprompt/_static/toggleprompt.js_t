@@ -5,8 +5,9 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
 function* getHideableCopyButtonElements(rootElement) {
     // yield all elements with the "go" (Generic.Output),
-    // "gp" (Generic.Prompt), or "gt" (Generic.Traceback) CSS class
-    for (const el of rootElement.querySelectorAll('.go, .gp, .gt')) {
+    // "gp" (Generic.Prompt), "gt" (Generic.Traceback),
+    // or "gh" (ipython) CSS class
+    for (const el of rootElement.querySelectorAll('.go, .gp, .gt, .gh')) {
         yield el
     }
     // tracebacks (.gt) contain bare text elements that need to be
@@ -15,7 +16,7 @@ function* getHideableCopyButtonElements(rootElement) {
         while ((el = el.nextSibling) && el.nodeType !== Node.DOCUMENT_NODE) {
             // stop wrapping text nodes when we hit the next output or
             // prompt element
-            if (el.nodeType === Node.ELEMENT_NODE && el.matches(".gp, .go")) {
+            if (el.nodeType === Node.ELEMENT_NODE && el.matches(".gp, .go, .gh")) {
                 break
             }
             // if the node is a text node with content, wrap it in a
@@ -82,6 +83,7 @@ const loadCopyButton = () => {
         + ".highlight-python3 .highlight,"
         + ".highlight-pycon .highlight,"
         + ".highlight-pycon3 .highlight,"
+        + ".highlight-ipython .highlight,"
         + ".highlight-default .highlight"
     )
 
