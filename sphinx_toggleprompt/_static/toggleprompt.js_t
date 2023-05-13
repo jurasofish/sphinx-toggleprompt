@@ -103,6 +103,9 @@ const loadCopyButton = () => {
         clonedButton.onclick = buttonClick
         if (el.querySelector(".gp") !== null) {
             el.prepend(clonedButton)
+            if ('{{ toggleprompt_default_hidden }}' === 'true') {
+                clonedButton.click()  // click once to hide
+            }
         }
     })
 }
