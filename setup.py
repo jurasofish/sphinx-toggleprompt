@@ -27,7 +27,8 @@ setup(
     packages=find_packages(),
     package_data={'sphinx_toggleprompt': ['_static/toggleprompt.js_t']},
     classifiers=["License :: OSI Approved :: MIT License"],
+    python_requires=">=3.9",
     install_requires=[
-        "sphinx>=4.5.0,<7",
+        "sphinx>=4.5.0,<8",
     ]
 )
