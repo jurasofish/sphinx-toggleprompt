@@ -154,6 +154,15 @@ There's an example of this in the doc_copybutton folder.
 Changelog
 ================================
 
+V0.5.0 - 07-jan-2024
+-----------------------
+
+- Updated the main javascript code to match `that from the official Python docs theme <https://github.com/python/python-docs-theme/blob/d1e6df49a042c3aae79a2a9bc384bb1587fae777/python_docs_theme/static/copybutton.js>`_.
+  This is more or less a complete rewrite, and notably no longer relies on jquery.
+- Support Sphinx 4.5.0 through 8.x (previously was 4.5.0 through 5.x).
+- Support Python 3.9 through 3.12 (previously was 3.6 through 3.11).
+
+
 V0.4.0 - 08-apr-2023
 -----------------------
 
