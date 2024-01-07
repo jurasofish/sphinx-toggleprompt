@@ -154,6 +154,12 @@ There's an example of this in the doc_copybutton folder.
 Changelog
 ================================
 
+V0.5.2 - 07-jan-2024
+-----------------------
+
+- Fixed read the docs config issue
+
+
 V0.5.1 - 07-jan-2024
 -----------------------
 
