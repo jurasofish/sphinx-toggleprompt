@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
         docs-dir: ["doc", "doc_copybutton"]
         sphinx-ver: [
           "sphinx==5.3.0",
