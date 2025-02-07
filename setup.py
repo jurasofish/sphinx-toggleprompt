@@ -29,6 +29,6 @@ setup(
     classifiers=["License :: OSI Approved :: MIT License"],
     python_requires=">=3.9",
     install_requires=[
-        "sphinx>=4.5.0,<9",
+        "sphinx>=5.0.0",
     ]
 )
