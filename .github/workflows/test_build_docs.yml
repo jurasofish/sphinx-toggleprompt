@@ -18,6 +18,9 @@ jobs:
           "sphinx==7.2.6",
           "sphinx",
         ]
+        exclude:
+          - python-version: "3.13"
+            sphinx-ver: "sphinx==5.3.0"
 
     steps:
 
