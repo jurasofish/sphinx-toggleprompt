@@ -154,10 +154,12 @@ There's an example of this in the doc_copybutton folder.
 Changelog
 ================================
 
-V0.5.3 - 07-feb-2025
+V0.6.0 - 07-feb-2025
 -----------------------
 
 - Added support for Sphinx 8.x
+- CI tests with Python 3.13
+- Drop <8 sphinx version limit - now, any sphinx 5.0.0 or later is allowed.
 
 
 V0.5.2 - 07-jan-2024
